@@ -254,7 +254,7 @@ public class Main {
 
     private static void showReportByCategories() {
         financeManager.getCurrentUserWallet().ifPresent(wallet -> {
-            System.out.println("Введите категории для отчета через запятую (например: Еда,Такси):");
+            System.out.println("Введите категории для отчета через запятую (например: Еда, Такси):");
             final String[] categoryNames = scanner.nextLine().split(",");
             final java.util.List<Category> categories = new java.util.ArrayList<>();
             for (final String name : categoryNames) {
